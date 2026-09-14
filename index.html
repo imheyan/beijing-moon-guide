@@ -18,6 +18,7 @@
       --info: #7eb6d9;
       --ok: #8fbf9a;
       --warn: #d4a574;
+      --danger: #d98989;
     }
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
@@ -70,6 +71,7 @@
     .dot.info { background: var(--info); }
     .dot.ok { background: var(--ok); }
     .dot.warn { background: var(--warn); }
+    .dot.danger { background: var(--danger); }
     .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 8px; }
     .pill {
       appearance: none;
@@ -180,18 +182,55 @@
     </div>
     <p>白天可到近 30℃，日落后体感会掉到 16℃ 上下。带一件薄外套。山区（妙峰山、百花山）再加一层。九月下旬仍可能有蚊虫。</p>
 
-    <h2>预约、拍摄、避坑</h2>
+    <h2>预约与入园</h2>
+    <p>颐和园、北海、景山、陶然亭、玉渊潭等市属公园假期建议提前 1–2 天在「北京公园」或各园公众号预约。颐和园旺季门票 30 元，北海 10 元，景山 / 陶然亭常年 2 元。身份证原件入园。2026 年夜场活动尚未见统一公告，以各园当日为准。</p>
+
+    <h2>带相机怎么拍</h2>
+    <p class="muted">按一个人、带相机出发写。微信里对方看的是手机屏，不是取景器。先拍「能发的一张」，再拍给你自己留的月面。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>拍什么</th><th>焦段</th><th>快门</th><th>光圈</th><th>ISO</th><th>测光</th></tr></thead>
+        <tbody>
+          <tr><td>月出 + 桥/塔/屋脊</td><td>24–70 mm</td><td>1/60–1/125 s</td><td>f/4–f/8</td><td>200–800</td><td>偏天空。月亮略亮一点没关系，这张是给人看的</td></tr>
+          <tr><td>月面细节</td><td>200 mm 以上</td><td>1/125–1/250 s</td><td>f/8</td><td>100–400</td><td>点测月亮，保住高光。这张通常不发微信</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="faint">手动或光圈优先，关掉闪光灯和数码变焦。白平衡用日光或约 5200 K，不要暖黄、不要粉滤镜。有脚架就用；没有就靠栏杆、矮墙。黄金段仍是 18:10–19:30，月亮低、有前景。</p>
     <div class="two">
       <div>
-        <h3>入园</h3>
-        <p>颐和园、北海、景山、陶然亭、玉渊潭等市属公园假期建议提前 1–2 天在「北京公园」或各园公众号预约。颐和园旺季门票 30 元，北海 10 元，景山 / 陶然亭常年 2 元。身份证原件入园。</p>
-        <p>2026 年市属公园中秋夜场活动（望远镜、灯谜等）尚未见统一公告。颐和园已规划秋季节庆，但是否延长开放仍以官网为准。</p>
+        <h3>出一张能发的</h3>
+        <p>回看手机全屏：糊的、过锐的、路灯爆掉的删掉。导出 JPEG、sRGB，长边约 2000 px。微信会再压一次，原图 RAW 不要发。不加水印、不写日期、不加「中秋快乐」贴图。</p>
       </div>
       <div>
-        <h3>拍照</h3>
-        <p>月出带前景：24–70 mm，十七孔桥、白塔、故宫屋脊都是现成前景。月面细节：200 mm 以上，约 1/125 s、ISO 100–400、f/8。手机开夜景后不要对着近处灯光测光。</p>
-        <p>城市里看的是「景中月」，不是天文暗空。要干净的月亮盘，去门头沟山区，并确认夜间交通。</p>
+        <h3>地点怎么选前景</h3>
+        <p>颐和园东堤 / 十七孔桥、北海白塔、景山看故宫屋脊，都是现成同框。城市里拍的是「景中月」。要干净月盘再去门头沟，并确认夜间交通。</p>
       </div>
+    </div>
+
+    <h2>微信怎么发</h2>
+    <p class="muted">可以发，但别发成表白附件。照片是你看见的东西，不是「我特意给你拍的约会」。先选和她现在的距离。</p>
+    <div class="callout">
+      <strong>只发 1–2 张，当晚 20:00–22:00</strong>
+      过了凌晨像等人回。已读不回就停，不要追问「好看吗」。文案报地点，不要写想到你、月亮像你。
+    </div>
+    <div class="pills" id="chat-filters"></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>何时发</th><th>带几张图</th><th>直接复制</th><th>为什么这样写</th></tr></thead>
+        <tbody id="messages"></tbody>
+      </table>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>不要发</th><th>原因</th></tr></thead>
+        <tbody>
+          <tr><td><span class="dot danger"></span>一个人赏月想到你 / 这轮月亮像你</td><td>把分享变成索取回复</td></tr>
+          <tr><td><span class="dot danger"></span>九宫格、RAW、Live 连拍</td><td>对方在手机上只会觉得吵</td></tr>
+          <tr><td><span class="dot warn"></span>凌晨补「你睡了吗」「好看吗」</td><td>读起来像在等她</td></tr>
+          <tr><td><span class="dot warn"></span>先发一段很长的中秋感想再附图</td><td>图才是入口，字要短</td></tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="callout neutral">
@@ -230,9 +269,31 @@
       { name: "百花山", vibe: "诗意 · 更接近暗夜", district: "门头沟", hours: "需预留车程，确认景区夜间政策", metro: "自驾", tip: "北京城区外更适合看暗空的选择之一。确认封路、住宿与闭园后再出发，山区昼夜温差大。", tags: ["dark"], tone: "" }
     ];
 
+    const CHAT_FILTERS = [
+      { id: "chat", label: "平时有闲聊" },
+      { id: "quiet", label: "很少说话" },
+      { id: "same-city", label: "她也在北京" }
+    ];
+    const MESSAGES = {
+      chat: [
+        { when: "25 日 20:00–22:00", photos: "1 张月出+前景，不要九宫格", copy: "今晚昆明湖，月出比日落还早。", why: "报地点和时间，像分享看见的东西，不是要评价" },
+        { when: "刚拍完、还在园里", photos: "白塔或十七孔桥同框 1 张", copy: "北海这边刚升上来。", why: "短、现在进行时；她要是想问会自己问" }
+      ],
+      quiet: [
+        { when: "当晚 20:00–21:30，或第二天上午", photos: "只发最好的 1 张", copy: "中秋在颐和园东堤，月亮出来了。", why: "有来由、无情绪。她接了再聊；已读不回就停" },
+        { when: "第二天 10:00 前后", photos: "压过的 1 张，长边约 2000 px", copy: "昨晚拍的，今天压了一下。", why: "不半夜发。不补「好看吗」「你睡了吗」" }
+      ],
+      "same-city": [
+        { when: "月出后、她可能还醒着", photos: "1 张，或先不发图只发字", copy: "你今晚看见了吗？我这边昆明湖刚升上来。", why: "问句把球给她。她若也出门，自然会回一张" }
+      ]
+    };
+
     let filter = "all";
+    let chat = "chat";
     const filtersEl = document.getElementById("filters");
     const spotsEl = document.getElementById("spots");
+    const chatFiltersEl = document.getElementById("chat-filters");
+    const messagesEl = document.getElementById("messages");
 
     function renderFilters() {
       filtersEl.innerHTML = FILTERS.map((f) =>
@@ -252,8 +313,27 @@
       renderFilters();
       renderSpots();
     });
+    function renderChatFilters() {
+      chatFiltersEl.innerHTML = CHAT_FILTERS.map((f) =>
+        `<button type="button" class="pill${f.id === chat ? " active" : ""}" data-id="${f.id}">${f.label}</button>`
+      ).join("");
+    }
+    function renderMessages() {
+      messagesEl.innerHTML = MESSAGES[chat].map((m) =>
+        `<tr><td>${m.when}</td><td>${m.photos}</td><td>${m.copy}</td><td>${m.why}</td></tr>`
+      ).join("");
+    }
+    chatFiltersEl.addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-id]");
+      if (!btn) return;
+      chat = btn.getAttribute("data-id");
+      renderChatFilters();
+      renderMessages();
+    });
     renderFilters();
     renderSpots();
+    renderChatFilters();
+    renderMessages();
 
     (function drawChart() {
       const cats = ["9/23", "9/24", "9/25", "9/26", "9/27", "9/28"];
