@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>北京赏月指南 · 2026 中秋</title>
+  <meta name="description" content="2026 年北京中秋赏月指南：月出时间、满月时刻、园林夜场与三条现成路线。">
+  <meta name="theme-color" content="#0c1222">
+  <style>
+    :root {
+      --bg: #0c1222;
+      --bg-elev: #141c30;
+      --text: #e8edf7;
+      --muted: #9aa7bd;
+      --faint: #6d7b91;
+      --line: #243049;
+      --accent: #d7b56d;
+      --info: #7eb6d9;
+      --ok: #8fbf9a;
+      --warn: #d4a574;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+    body {
+      font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 40px 20px 72px; }
+    h1 { font-size: 28px; font-weight: 650; letter-spacing: 0.02em; margin: 0 0 10px; }
+    h2 { font-size: 20px; margin: 40px 0 10px; font-weight: 650; }
+    h3 { font-size: 16px; margin: 8px 0; font-weight: 600; }
+    p { margin: 0 0 12px; }
+    .lede { color: var(--muted); max-width: 46em; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .faint { color: var(--faint); font-size: 13px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 28px 0 20px;
+    }
+    .stat {
+      background: var(--bg-elev);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px 14px;
+    }
+    .stat b { display: block; font-size: 22px; font-weight: 650; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    .stat.info b { color: var(--info); }
+    .callout {
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--info);
+      background: var(--bg-elev);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 16px 0;
+    }
+    .callout.warn { border-left-color: var(--warn); }
+    .callout.neutral { border-left-color: var(--faint); }
+    .callout strong { display: block; margin-bottom: 4px; }
+    .table-wrap { overflow-x: auto; margin: 12px 0 8px; border: 1px solid var(--line); border-radius: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; background: #10182a; white-space: nowrap; }
+    tr:last-child td { border-bottom: 0; }
+    tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+    .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 8px; background: var(--faint); }
+    .dot.info { background: var(--info); }
+    .dot.ok { background: var(--ok); }
+    .dot.warn { background: var(--warn); }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 8px; }
+    .pill {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--text);
+      border-radius: 999px;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .pill.active { background: var(--accent); color: #1a1408; border-color: var(--accent); font-weight: 600; }
+    .chart { background: var(--bg-elev); border: 1px solid var(--line); border-radius: 10px; padding: 12px 8px 4px; }
+    .chart svg { width: 100%; height: 220px; display: block; }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    a { color: var(--accent); }
+    footer { margin-top: 36px; color: var(--faint); font-size: 13px; }
+    @media (max-width: 720px) {
+      .stats, .two { grid-template-columns: 1fr 1fr; }
+      h1 { font-size: 24px; }
+    }
+    @media (max-width: 520px) {
+      .stats { grid-template-columns: 1fr; }
+      .two { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>北京赏月指南 · 2026 中秋</h1>
+    <p class="lede">农历八月十五是 9 月 25 日（周五）。假期 25–27 日。今年是较罕见的「十五的月亮十七圆」：最圆时刻在 27 日 0:49，但 25、26、27 三晚肉眼差别很小。</p>
+
+    <div class="stats">
+      <div class="stat"><b>9月25日</b><span>中秋 · 周五</span></div>
+      <div class="stat info"><b>00:49</b><span>最圆 · 27日凌晨</span></div>
+      <div class="stat"><b>17:19</b><span>25日月出（北京）</span></div>
+      <div class="stat"><b>18:07</b><span>25日日落</span></div>
+    </div>
+
+    <div class="callout">
+      <strong>不必卡在最圆那一秒</strong>
+      满月在 9 月 27 日 0:49（农历十七）。25 日傍晚月面约 98.6%，26 日晚约 99.9%。赏月看的是暮色、地平线「月亮显大」和前景，不是天文满月的瞬时。今年这一轮也不是超级月亮（月地距离约 38.2 万公里，接近平均值），而是秋分后的收获月。
+    </div>
+
+    <h2>三夜怎么选</h2>
+    <p class="muted">月出、月落取北京城区（约 39.9°N, 116.4°E）。照明度为当日月球正午附近的月面比。日落 25 日为 18:07，其后每晚约提早 1 分钟。来源：sunrise-and-sunset / Timeanddate / 新华社。</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>晚上</th><th>月出</th><th>照明</th><th>观感</th><th>人群</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="dot info"></span>9/25 周五 · 中秋</td><td>17:19</td><td>98.6%</td><td>月出早于日落约 50 分钟，暮色里就能看到东边的月亮</td><td>最挤，园林建议 16:30 入园</td></tr>
+          <tr><td><span class="dot ok"></span>9/26 周六</td><td>17:41</td><td>99.9%</td><td>肉眼最圆的完整夜晚；月出仍接近日落</td><td>仍是假期，略好于周五</td></tr>
+          <tr><td><span class="dot"></span>9/27 周日</td><td>18:05</td><td>100% 在凌晨</td><td>日落后月出，天空更暗、月亮更亮；最圆已过</td><td>相对松，若 27 日有雨则改 25–26</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>北京月面照明度（9 月 23–28 日）</h3>
+    <div class="chart" id="chart"></div>
+    <p class="faint">纵轴为月面照明度（%）。9/27 的 100% 对应 0:49 的天文满月；当晚的月亮已开始微亏。数据为月球正午附近的照明度，来源 Timeanddate。</p>
+
+    <h2>9 月 25 日时间线</h2>
+    <p class="muted">面向东方或东南的水面、空地。月出方位接近正东。地平线附近的月亮因「月亮错觉」显得更大，是拍照黄金段。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>时间</th><th>发生什么</th><th>你该在哪</th></tr></thead>
+        <tbody>
+          <tr><td>16:30</td><td>入园、占东向位置</td><td>颐和园东堤、北海北岸、景山万春亭</td></tr>
+          <tr><td>17:19</td><td>月出</td><td>看东边地平线，不要对着西边晚霞干等</td></tr>
+          <tr><td>18:07</td><td>日落</td><td>暮色 + 圆月叠加，对比度最好</td></tr>
+          <tr><td>18:10–19:30</td><td>最佳赏月窗</td><td>月亮仍低，前景（桥、塔、屋脊）容易入画</td></tr>
+          <tr><td>19:00</td><td>颐和园停止入园</td><td>想进颐和园必须更早</td></tr>
+          <tr><td>20:00</td><td>颐和园闭园</td><td>改北海、景山、陶然亭或什刹海</td></tr>
+          <tr><td>21:00</td><td>北海、景山闭园</td><td>陶然亭可待到 22:00</td></tr>
+          <tr><td>22:00 以后</td><td>园林基本结束</td><td>什刹海、河岸、小区空地、高处平台</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>按场景选点</h2>
+    <p class="muted">下列地点综合北京市文旅局「十大最美赏月胜地」与实际夜场可用性。开放时间为旺季常规安排，中秋若延时以公园公告为准。</p>
+    <div class="pills" id="filters"></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>地点</th><th>气质</th><th>区</th><th>夜场</th><th>交通</th><th>怎么看</th></tr></thead>
+        <tbody id="spots"></tbody>
+      </table>
+    </div>
+
+    <h2>三条现成路线</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>路线</th><th>节奏</th><th>适合</th><th>注意</th></tr></thead>
+        <tbody>
+          <tr><td><span class="dot info"></span>皇家暮色</td><td>16:30 颐和园东堤看月出日落 → 20:00 前出园晚饭</td><td>想要湖面 + 古建同框</td><td>必须提前预约；19:00 停止入园</td></tr>
+          <tr><td><span class="dot ok"></span>不赶闭园</td><td>奥林匹克森林公园看月出 → 晚饭后什刹海散步</td><td>家庭、不想抢票</td><td>月亮细节一般，胜在从容</td></tr>
+          <tr><td><span class="dot warn"></span>卢沟晓月</td><td>26 或 27 日 5:00 前后到永定河岸，看月西沉</td><td>愿意起早、要典故</td><td>看的是黎明不是晚上；勿进未开放桥面</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>天气与穿衣</h2>
+    <div class="callout warn">
+      <strong>现在距中秋还有约 11 天，降水预报会变</strong>
+      截至 9 月 14 日，中期趋势是 25–26 日多云、气温大约 17–29℃；部分来源给 27 日降雨可能。10 天以上的雨预报不稳定，出发前 1–2 天以北京市气象台 / 中央气象台为准。薄云仍可赏月，厚云和雨才需要改期。
+    </div>
+    <p>白天可到近 30℃，日落后体感会掉到 16℃ 上下。带一件薄外套。山区（妙峰山、百花山）再加一层。九月下旬仍可能有蚊虫。</p>
+
+    <h2>预约、拍摄、避坑</h2>
+    <div class="two">
+      <div>
+        <h3>入园</h3>
+        <p>颐和园、北海、景山、陶然亭、玉渊潭等市属公园假期建议提前 1–2 天在「北京公园」或各园公众号预约。颐和园旺季门票 30 元，北海 10 元，景山 / 陶然亭常年 2 元。身份证原件入园。</p>
+        <p>2026 年市属公园中秋夜场活动（望远镜、灯谜等）尚未见统一公告。颐和园已规划秋季节庆，但是否延长开放仍以官网为准。</p>
+      </div>
+      <div>
+        <h3>拍照</h3>
+        <p>月出带前景：24–70 mm，十七孔桥、白塔、故宫屋脊都是现成前景。月面细节：200 mm 以上，约 1/125 s、ISO 100–400、f/8。手机开夜景后不要对着近处灯光测光。</p>
+        <p>城市里看的是「景中月」，不是天文暗空。要干净的月亮盘，去门头沟山区，并确认夜间交通。</p>
+      </div>
+    </div>
+
+    <div class="callout neutral">
+      <strong>错峰</strong>
+      24 日晚月面已约 95%，不是假期，园林人少。若只想安静看月亮，24 日或 27 日往往比中秋当晚更舒服。
+    </div>
+
+    <footer>
+      来源：国务院 2026 年节假日安排；新华社 / 人民日报「十七圆」；北京市文旅局十大赏月胜地；颐和园官网及北京市公园开放时间公开数据；北京月出月落 sunrise-and-sunset.com、Timeanddate；天气为 9 月 14 日中期趋势。开放时间与活动以各园当日公告为准。<br>
+      公园预约可从 <a href="https://www.summerpalace.net.cn/">颐和园官网</a> 或各园微信公众号入口进入。
+    </footer>
+  </div>
+
+  <script>
+    const FILTERS = [
+      { id: "all", label: "全部" },
+      { id: "free", label: "免预约" },
+      { id: "garden", label: "园林夜场" },
+      { id: "kids", label: "亲子" },
+      { id: "photo", label: "出片" },
+      { id: "dark", label: "郊外暗夜" },
+      { id: "dawn", label: "清晨晓月" }
+    ];
+    const SPOTS = [
+      { name: "颐和园东堤 / 十七孔桥", vibe: "皇家范 · 海上生明月", district: "海淀", hours: "6:00–20:00，19:00 停止入园", metro: "4 号线北宫门 / 西郊线颐和园西门", tip: "面向昆明湖东岸看月出。须 17:00 前入园，否则赶不上暮色窗口。佛香阁等园中园 18:00 关闭。", tags: ["garden", "photo"], tone: "info" },
+      { name: "北海公园", vibe: "小聚 · 白塔倒影", district: "西城", hours: "6:00–21:00，20:30 停止入园", metro: "6 号线北海北", tip: "北岸、五龙亭一带可把白塔与圆月同框。园中园 18:00 关，湖岸能待到 21:00。", tags: ["garden", "photo", "kids"], tone: "info" },
+      { name: "什刹海", vibe: "不打烊 · 人约黄昏后", district: "西城", hours: "湖岸开放，无闭园", metro: "8 号线什刹海", tip: "晚饭后散步最省事。灯火杂、月亮对比度差，适合氛围，不适合看月面细节。", tags: ["free", "kids"], tone: "ok" },
+      { name: "景山万春亭", vibe: "人气 · 中轴线眺月", district: "西城", hours: "旺季 6:00–21:00", metro: "8 号线金鱼胡同", tip: "故宫屋脊与圆月同框的经典点。中秋夜人多，建议 16:30 前后上山占位。门票常年 2 元，活动期或上调。", tags: ["garden", "photo"], tone: "warn" },
+      { name: "月坛公园", vibe: "仪式感 · 明清祭月之所", district: "西城", hours: "晚间约至 21:30，以门区为准", metro: "1 号线南礼士路 / 月坛", tip: "文化意义上最「正」的赏月地。园子不大，四周有楼，天空被切，更适合短停与仪式，而非长焦拍月。", tags: ["garden"], tone: "" },
+      { name: "陶然亭公园", vibe: "亲子 · 闭园最晚之一", district: "西城", hours: "6:00 开园，21:00 停止入园，22:00 闭园", metro: "4 号线陶然亭", tip: "市属公园里能待到最晚的选择之一，适合晚饭后带小孩等月亮升高。水域可借倒影。", tags: ["garden", "kids"], tone: "ok" },
+      { name: "北京古观象台", vibe: "科技感 · 明代观星台", district: "东城", hours: "夜间观测若举办多为 19:00–21:00", metro: "1 / 2 号线建国门", tip: "平日是博物馆，未必有中秋夜场。出行前查北京古代天文博物馆 / 北京天文馆公告，切勿按往年活动直接前往。", tags: ["photo"], tone: "warn" },
+      { name: "玉渊潭中堤桥", vibe: "亲子活动 · 往年有望远镜", district: "海淀", hours: "以公园公告为准，往年中秋有夜场", metro: "1 号线军事博物馆 / 9 号线", tip: "2025 年中秋曾办灯谜、花灯和天文望远镜观月。2026 年安排尚未见正式发布，出发前看「玉渊潭公园」公众号。", tags: ["garden", "kids"], tone: "info" },
+      { name: "奥林匹克森林公园", vibe: "开阔天空 · 少楼挡", district: "朝阳", hours: "园区较大，夜场相对从容", metro: "8 号线森林公园南门", tip: "不想挤古典园林时的稳妥选项。选东向空地看月出。光污染仍在，但比什刹海干净。", tags: ["free", "kids", "photo"], tone: "ok" },
+      { name: "卢沟桥 / 永定河岸", vibe: "卢沟晓月 · 看的是黎明", district: "丰台", hours: "桥面参观多在日间；黎明在河岸", metro: "14 号线大瓦窑，再公交或打车", tip: "「晓月」是清晨西沉的月亮，不是晚上。9 月 26–27 日约 5:00–6:30 月落。桥面未必这么早开放，请在河岸或桥头空地观看，勿进入未开放区域。", tags: ["dawn", "photo"], tone: "warn" },
+      { name: "妙峰山", vibe: "思乡 · 山区暗夜", district: "门头沟", hours: "山区，建议自驾并预留返程", metro: "自驾为主", tip: "海拔高、光污染少，月亮更「干净」。路远、夜间凉，适合愿意跑一趟的人，不适合饭后临时出门。", tags: ["dark", "photo"], tone: "" },
+      { name: "百花山", vibe: "诗意 · 更接近暗夜", district: "门头沟", hours: "需预留车程，确认景区夜间政策", metro: "自驾", tip: "北京城区外更适合看暗空的选择之一。确认封路、住宿与闭园后再出发，山区昼夜温差大。", tags: ["dark"], tone: "" }
+    ];
+
+    let filter = "all";
+    const filtersEl = document.getElementById("filters");
+    const spotsEl = document.getElementById("spots");
+
+    function renderFilters() {
+      filtersEl.innerHTML = FILTERS.map((f) =>
+        `<button type="button" class="pill${f.id === filter ? " active" : ""}" data-id="${f.id}">${f.label}</button>`
+      ).join("");
+    }
+    function renderSpots() {
+      const rows = SPOTS.filter((s) => filter === "all" || s.tags.includes(filter));
+      spotsEl.innerHTML = rows.map((s) =>
+        `<tr><td><span class="dot ${s.tone}"></span>${s.name}</td><td>${s.vibe}</td><td>${s.district}</td><td>${s.hours}</td><td>${s.metro}</td><td>${s.tip}</td></tr>`
+      ).join("");
+    }
+    filtersEl.addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-id]");
+      if (!btn) return;
+      filter = btn.getAttribute("data-id");
+      renderFilters();
+      renderSpots();
+    });
+    renderFilters();
+    renderSpots();
+
+    (function drawChart() {
+      const cats = ["9/23", "9/24", "9/25", "9/26", "9/27", "9/28"];
+      const vals = [89.4, 95.0, 98.6, 99.9, 100, 98.7];
+      const w = 900, h = 220, padL = 48, padR = 20, padT = 18, padB = 36;
+      const yMin = 85, yMax = 100;
+      const x = (i) => padL + (i * (w - padL - padR)) / (cats.length - 1);
+      const y = (v) => padT + (1 - (v - yMin) / (yMax - yMin)) * (h - padT - padB);
+      const pts = vals.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+      const area = `${padL},${h - padB} ${pts} ${w - padR},${h - padB}`;
+      const ticks = [85, 90, 95, 100];
+      const grid = ticks.map((t) =>
+        `<line x1="${padL}" y1="${y(t)}" x2="${w - padR}" y2="${y(t)}" stroke="#243049"/><text x="${padL - 8}" y="${y(t) + 4}" fill="#9aa7bd" font-size="12" text-anchor="end">${t}%</text>`
+      ).join("");
+      const labels = cats.map((c, i) =>
+        `<text x="${x(i)}" y="${h - 12}" fill="#9aa7bd" font-size="12" text-anchor="middle">${c}</text>`
+      ).join("");
+      const dots = vals.map((v, i) =>
+        `<circle cx="${x(i)}" cy="${y(v)}" r="4" fill="#7eb6d9"/><text x="${x(i)}" y="${y(v) - 10}" fill="#e8edf7" font-size="11" text-anchor="middle">${v}%</text>`
+      ).join("");
+      document.getElementById("chart").innerHTML =
+        `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="北京月面照明度折线图">${grid}<polyline points="${area}" fill="rgba(126,182,217,0.12)" stroke="none"/><polyline points="${pts}" fill="none" stroke="#7eb6d9" stroke-width="2"/>${dots}${labels}</svg>`;
+    })();
+  </script>
+</body>
+</html>
